@@ -23,11 +23,13 @@ To break down the above formula; the first section contains the range of where t
 1. When creating my Pivot for Theatre Outcomes by Launch Date, when I pulled Data Created Conversion into the Pivot table, Excel automatically added Years and Quarters to further categorize this Date field. However I was not interested in this level of granularity, so I removed both leaving me only with Date Created Conversion Month being displayed in the rows.
 2. Some of the formulas I was not entirely familiar with, so I had to read and understand them before applying them to my data. When using the COUNTIFS() formula, I manually checked some of the results of my data to ensure the formula was working as expected. I did this manual check by applying the same filters on the raw data to ensure the numbers were equal. As a secondary check – I added sum totals for each of the Successful/Failed/Canceled to quickly check the manually filtered data was matching the same count. 
 3. When copying the COUNTIFS() formula to another cell, I originally had forgotten to use the static definition of a cell using $. This meant that the result was incorrect and I had to refactor the formulas to ensure the columns required stayed the same.
-4. When calculating ‘Number of Cancelled’ fields for the Goal ranges – I was concerned that my formula was not working since all results were 0. Using another manual check for Canceled only, I was able to confirm that no ‘Plays’ were canceled and hence my result was correct. 
+4. When calculating ‘Number of Canceled’ fields for the Goal ranges – I was concerned that my formula was not working since all results were 0. Using another manual check for Canceled only, I was able to confirm that no ‘Plays’ were canceled and hence my result was correct. 
 
 ## Results:
 - What are two conclusions you can draw about the Theatre Outcomes by Launch Date?
-May, June and July are the most successful months to launch a Theatre funding Campaign. There are less funding campaigns launched in Nov and Dev, with Dec showing us an almost equal likelihood of success/failure on a newly launched campaign.
+May, June and July are the most successful months to launch a Theatre funding Campaign. 
+
+There are less funding campaigns launched in Nov and Dec, with Dec showing us an almost equal likelihood of success/failure on a newly launched campaign.
 
 - What can you conclude about the Outcomes based on Goals?
 If a new Play campaign has a goal between 45000 – 49999, it is 100% likely to fail, based on the data we have analyzed.  
